@@ -2,7 +2,7 @@ defmodule Faunadoo do
   alias HTTPoison
 
   def query(fql_expression, key) do
-    url = System.get_env("NEXT_PUBLIC_FAUNA_URL") || "https://db.fauna.com/query/1"
+    url = "https://db.fauna.com/query/1"
 
     headers = [
       {"accept", "application/json, text/plain, */*"},
